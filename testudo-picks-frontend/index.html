@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testudo Picks</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0G8Z051JNJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0G8Z051JNJ');
+</script>
+<body>
+    <h1>Testudo Picks</h1>
+    <p class="description">Find all currently available gen eds at the University of Maryland ranked by easiest to hardest based on PlanetTerp average GPA.</p>
+
+    <h3>Important Notes</h3>
+    <ul>
+      <li>While order is gen eds is shown in order starting from highest average gpa, not every class has information on Planet Terp. 
+        The classes with no average gpa on planet terp are at the bottom of the list and could potentially be easier then some of the 
+        classes with average gpa's. I advise you to do your own reseach on these classes through reddit posts or word of mouth.
+      </li>
+      <li> The server updates infromation from testudo every 30 minutes so seat avaliablity is not 
+        real time, however, should be pretty accurate.
+      </li>
+    </ul>
+    
+    <label for="course_type">Choose a Gen Ed Category</label>
+    <select id="course_type" name="course_type">
+        <option value="" selected disabled hidden>-- Select a category --</option>
+        <option value="FSAW">FSAW</option>
+        <option value="FSAR">FSAR</option>
+        <option value="FSMA">FSMA</option>
+        <option value="FSOC">FSOC</option>
+        <option value="FSPW">FSPW</option>
+        <option value="DSHS">DSHS</option>
+        <option value="DSHU">DSHU</option>
+        <option value="DSNS">DSNS</option>
+        <option value="DSNL">DSNL</option>
+        <option value="DSSP">DSSP</option>
+        <option value="DVCC">DVCC</option>
+        <option value="DVUP">DVUP</option>
+        <option value="SCIS">SCIS</option>
+    </select>
+
+    <div id="course-results"></div>
+    <div id="loading" class="spinner" style="display: none;"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
